@@ -29,18 +29,24 @@ This tool generates comprehensive JSON reports for each SAE feature, including:
 - **Mac**: Press Cmd+Space, type `Terminal`, and press Enter.
 - **Linux**: Press Ctrl+Alt+T, or search for "Terminal" in your applications.
 
-### Check if Python is Installed
+### Check Your Python Version
+
+**Python 3.9 - 3.13 required.** Modal doesn't support older or newer versions. We recommend Python 3.11 or 3.12.
 
 In your terminal, type:
 ```
 python --version
 ```
 
-**What you should see:** Something like `Python 3.10.12` or `Python 3.11.4`
+**What you should see:** Something like `Python 3.11.4` or `Python 3.12.1`
 
 **If you see an error** like "python not found":
 - **Windows**: Try `py --version` instead. Windows often uses `py` instead of `python`.
-- **If still not found**: Install Python from https://www.python.org/downloads/ (choose version 3.10 or 3.11)
+- **If still not found**: Install Python from https://www.python.org/downloads/ (choose version 3.11 or 3.12)
+
+**If your version is too old (3.8 or below) or too new (3.14+):**
+- Install a supported version from https://www.python.org/downloads/
+- On Windows, you can have multiple versions installed and use `py -3.12` to run a specific one
 
 ---
 
