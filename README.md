@@ -13,6 +13,22 @@ This tool generates comprehensive JSON reports for each SAE feature, including:
 
 ---
 
+## Setup at a Glance
+
+Here's the big picture of what setup involves:
+
+1. **Python** - Make sure you have Python 3.9-3.13 installed (Modal won't work with other versions)
+2. **Install packages** - Run `pip install -r requirements.txt` from this folder
+3. **Modal account** - Run `modal setup` which opens a browser to create a free account
+4. **Upload data files** - Upload ~10GB of data files to Modal's cloud storage. Three smaller files upload directly; the large 9GB file transfers from Google Drive to Modal (so you don't have to download it yourself). See [DATA_SETUP.md](DATA_SETUP.md) for details.
+5. **Test** - Run a quick test command to verify everything works
+
+After setup, analyzing a feature is just: `python batch_analyze.py 16751`
+
+The sections below walk through each step in detail.
+
+---
+
 ## Before You Start
 
 ### What You Need to Know
